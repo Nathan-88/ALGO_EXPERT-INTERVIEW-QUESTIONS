@@ -6,7 +6,9 @@ Two Number Sum
  target sum, the function should return an empty array.
  Note that the target sum has to be obtained by summing two different integers in the array;
  you can't add a single integer to itself in order to obtain the target sum.
- You can assume that
+ 
+ You can assume that there will be at most one pair of numbers summing up to the target
+ sum
 """
 # def twoNumberSum(array, targetSum):
 #     # Write your code here.
@@ -29,7 +31,6 @@ def twoNumberSum(array, targetSum):
         if target in storage and target is not num:
              return [num, target]
     return []
-
 
 array = [- 3, 5, -4, 8, 11, 1, -1, 6]
 targetSum = 10
